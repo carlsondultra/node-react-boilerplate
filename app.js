@@ -9,6 +9,7 @@ const bodyParser = require("body-parser");
 const logger = require("morgan");
 const cors = require("cors");
 const session = require("express-session");
+const mongoose = require('mongoose')
 
 const app = express();
 
@@ -49,10 +50,17 @@ app.use(function (req, res, next) {
 const port = process.env.PORT || 2000;
 
 // start the server.
-app.listen(port, () => {
-  console.log("Server Started at ", port);
-});
+  app.listen(port, () => {
+    console.log("Server Started at ", port);
+  });
 
+//connecting to mongoDB
+mongoose.connect(process.env.CONNECTION_STR)
+.then(() =>{
+  console.log('connected to MongoDB')
+}).catch((error) =>{
+  console.log(error)
+})
 /**
  * Expose
  */

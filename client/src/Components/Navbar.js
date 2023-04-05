@@ -20,6 +20,7 @@ function Navbar() {
 				<Link to="/celllines">CellLines</Link>
 				<Link to="/psets">Psets</Link>
 				<Link to="/psetstable">PsetsTable</Link>
+				<Link to="/psetsmongo">PsetsMongo</Link>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
