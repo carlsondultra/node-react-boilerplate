@@ -1,0 +1,15 @@
+ul.cellLines{
+    text-align: left;
+    padding: 30px;
+    list-style-type: circle;
+}
+
+ul.psets{
+    text-align: left;
+    padding: 30px;
+    list-style-type: square;
+}
+
+h1{
+    padding: 4px;
+}

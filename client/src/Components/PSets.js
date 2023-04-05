@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import '../Styles/Content.css'
+
 
 const PSets = () => {
   const [PSets, setPSets] = useState(null);
@@ -24,7 +26,7 @@ const PSets = () => {
       {/* If the PSets state object is not null, then display the list of PSet names. */}
       {
         PSets && 
-        <ul>
+        <ul class="psets">
           {
             PSets.map((PSet) => (
               <li key={PSet.name}>{PSet.name}</li>

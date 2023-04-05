@@ -23,7 +23,7 @@ const CellLines = () => {
       {/* If the cells state object is not null, then display the list of cell ids. */}
       {
         cells && 
-        <ul>
+        <ul class="cellLines">
           {
             cells.map((cell) => (
               <li key={cell.id}>{cell.id}</li>
