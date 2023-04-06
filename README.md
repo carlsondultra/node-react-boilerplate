@@ -12,9 +12,13 @@ cd node-react-boilerplate
 
 - Assuming you are using VS Code or any code editor, open the root directory of the app.
 - Create a .env file and add the following content:
+
+```bash
 NODE_ENV=development
 PORT=2000
 CONNECTION_STR=PASTE_YOUR_MONGODB_CONNECTION_STRING_HERE
+```
+
 - Open a terminal at the root directory, run npm install to install all the dependencies.
 - Once all the dependencies are installed, run npm run devstart to start the backend server.
 - Open a browser and go to [http://localhost:2000/api/test](http://localhost:2000/api/test) to see if the backend server is running properly. You should see {"status":"ok"} on the browser window.
