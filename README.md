@@ -27,3 +27,7 @@ CONNECTION_STR=PASTE_YOUR_MONGODB_CONNECTION_STRING_HERE
 - Once done, run npm start. You will see the frontend open on your browser. 
 - After all the steps above are done, you should have the backend API running on localhost:2000 and the frontend running on localhost:3000.
 - To terminate each server, go to each terminal and stop the server with Crtl + C.
+
+## It is often advisable to not hard-code any information directly used in the codebase that could be a security risk such as database connection strings, tokens and API endpoints. How can this be done?
+
+This can be done by using .env files where the database connection strings, tokens, api endpoints, etc. are environment variables, and then the programmer will have to input their own manually. The .env files can be added to a .gitignore file so that the .env files are not accidentally committed/pushed onto the repository. .env files provide both security and flexibility, since all the private information (database connection strings, tokens, etc…) can all be modified in one file.
