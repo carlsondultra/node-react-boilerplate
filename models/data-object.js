@@ -48,7 +48,6 @@ const dataObjectSchema = new Schema(
 );
 
 const DataObject = mongoose.model("DataObject", dataObjectSchema);
-console.log(DataObject)
 
 const BaseDataObject = DataObject.discriminator(
     'BaseDataObject',
